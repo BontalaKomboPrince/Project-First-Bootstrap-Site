@@ -11,52 +11,195 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-  </head>
-  <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="containrer-fluid d-flex">
-        <div class="navbar-header d-flex col-6">
-          <a class="navbar-brand" href="#"><img img class="Aketi-icon" src="Aketi copy/Logo/Aketi-logo1.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#MyNavbar">
-            <span class="icone-bar"></span>
-            <span class="icone-bar"></span>
-            <span class="icone-bar"></span>
-          </button>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="myNavBar">
-          <ul class="nav navbar-nav navbar">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Carte.html">Carte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Restaurants.html">Restaurants</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Photo.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Photos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Photo.html">Action</a>
-                <a class="dropdown-item" href="Photo.html">Another action</a>
-                <a class="dropdown-item" href="Photo.html">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </nav>
-  </header>
   <body>
+
+  <div id="sidebar-wrapper">
+    <div class="ct-mainNav-inner">
+
+      <a class="navbar-brand" href="#"><img img class="Aketi-icon" src="Aketi copy/Logo/Aketi-logo1.png" alt=""></a>
+         <ul id="sidebar_menu" class="sidebar-nav">
+            <li class="sidebar-brand">
+              <a id="menu-toggle" class="nav-link" href="index.html">Home
+                <span id="main_icon" <span class="sr-only">(current)></span></a>
+            </li>
+         </ul>
+         <ul class="sidebar-nav" id="sidebar">
+           <li>
+             <a class="nav-link" href="Carte.html">Carte
+                <span class="sub_icon glyphicon glyphicon-link"></span></a>
+           </li>
+            <ul class="sidebar-nav" id="sidebar">
+                 <li>
+                   <a class="nav-link" href="Restaurants.html">Restaurants
+                    <span class="sub_icon glyphicon glyphicon-link"></span></a>
+                 </li>
+                 <li>
+                   <a class="nav-link dropdown-toggle" href="Photo.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Photos
+                   </a><span class="sub_icon glyphicon glyphicon-link"></span></a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="#nav-Entree">Entree</a>
+                     <a class="dropdown-item" href="#nav-Plat">Plat</a>
+                     <a class="dropdown-item" href="#nav-Dessert">Dessert</a>
+                   </div>
+                 </li>
+            </ul>
+           <li>
+             <a class="nav-link" href="Contact.html">Contact</a>
+              <span class="sub_icon glyphicon glyphicon-link"></span></a>
+           </li>
+
+         </ul>
+
+         <div class="ct-mainNav-sidebar">
+                     <div class="ct-contactInfo text-uppercase animated" data-fx="fadeInUp">
+                         <h5 class="ct-u-colorMotive ct-u-font3">Location</h5>
+                         <p class="ct-u-font2">
+                             639 Saint-Job <br>
+                             Brusselasss, 1180
+                         </p>
+                     </div>
+                     <hr class="hr-custom ct-js-background animated" data-fx="fadeIn" data-time="400" data-bg="assets/images/hr2.png" data-bgrepeat="no-repeat" style="background-image: url(&quot;assets/images/hr2.png&quot;); background-repeat: no-repeat;">
+                     <div class="ct-contactInfo text-uppercase ct-u-paddingBottom30 animated" data-fx="fadeInUp">
+                         <h5 class="ct-u-colorMotive ct-u-font3">We are open</h5>
+                         <p class="ct-u-font2">
+                             Mon—Sat: 6am–6pm<br>
+                             Sunday: 6am–4pm
+                         </p>
+                     </div>
+                     <ul class="list-unstyled list-inline ct-socials animated" data-fx="fadeInUp" data-time="400">
+                         <li>
+                             <a href="https://www.facebook.com/createITpl" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                         </li>
+                         <li>
+                             <a href="https://twitter.com/createitpl" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                         </li>
+                         <li>
+                             <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google +"><i class="fa fa-fw fa-google-plus"></i></a>
+                         </li>
+                     </ul>
+                 </div>
+               </div>
+       </div>
+
+
+
+        <!-- First Jumbotron -->
+
+        <!doctype html>
+        <html lang="en">
+          <head>
+          <title>Aketi</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+            <link rel="stylesheet" href="css/style.css">
+
+
+
+          <body>
+
+          <div id="sidebar-wrapper">
+            <div class="ct-mainNav-inner">
+
+              <a class="navbar-brand" href="#"><img img class="Aketi-icon" src="Aketi copy/Logo/Aketi-logo1.png" alt=""></a>
+                 <ul id="sidebar_menu" class="sidebar-nav">
+                    <li class="sidebar-brand">
+                      <a id="menu-toggle" class="nav-link" href="index.html">Home
+                        <span id="main_icon" <span class="sr-only">(current)></span></a>
+                    </li>
+                 </ul>
+                 <ul class="sidebar-nav" id="sidebar">
+                   <li>
+                     <a class="nav-link" href="Carte.html">Carte
+                        <span class="sub_icon glyphicon glyphicon-link"></span></a>
+                   </li>
+                    <ul class="sidebar-nav" id="sidebar">
+                         <li>
+                           <a class="nav-link" href="Restaurants.html">Restaurants
+                            <span class="sub_icon glyphicon glyphicon-link"></span></a>
+                         </li>
+                         <li>
+                           <a class="nav-link dropdown-toggle" href="Photo.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Photos
+                           </a><span class="sub_icon glyphicon glyphicon-link"></span></a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                             <a class="dropdown-item" href="#nav-Entree">Entree</a>
+                             <a class="dropdown-item" href="#nav-Plat">Plat</a>
+                             <a class="dropdown-item" href="#nav-Dessert">Dessert</a>
+                           </div>
+                         </li>
+                    </ul>
+                   <li>
+                     <a class="nav-link" href="Contact.html">Contact</a>
+                      <span class="sub_icon glyphicon glyphicon-link"></span></a>
+                   </li>
+
+                 </ul>
+
+                 <div class="ct-mainNav-sidebar">
+                             <div class="ct-contactInfo text-uppercase animated" data-fx="fadeInUp">
+                                 <h5 class="ct-u-colorMotive ct-u-font3">Location</h5>
+                                 <p class="ct-u-font2">
+                                     639 Saint-Job <br>
+                                     Brusselasss, 1180
+                                 </p>
+                             </div>
+                             <hr class="hr-custom ct-js-background animated" data-fx="fadeIn" data-time="400" data-bg="assets/images/hr2.png" data-bgrepeat="no-repeat" style="background-image: url(&quot;assets/images/hr2.png&quot;); background-repeat: no-repeat;">
+                             <div class="ct-contactInfo text-uppercase ct-u-paddingBottom30 animated" data-fx="fadeInUp">
+                                 <h5 class="ct-u-colorMotive ct-u-font3">We are open</h5>
+                                 <p class="ct-u-font2">
+                                     Mon—Sat: 6am–6pm<br>
+                                     Sunday: 6am–4pm
+                                 </p>
+                             </div>
+                             <ul class="list-unstyled list-inline ct-socials animated" data-fx="fadeInUp" data-time="400">
+                                 <li>
+                                     <a href="https://www.facebook.com/createITpl" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                 </li>
+                                 <li>
+                                     <a href="https://twitter.com/createitpl" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                 </li>
+                                 <li>
+                                     <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google +"><i class="fa fa-fw fa-google-plus"></i></a>
+                                 </li>
+                             </ul>
+                         </div>
+                       </div>
+               </div>
+
+
+
+                <!-- First Jumbotron -->
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="jumbotron text-center col-10 align-self-center">
+                  <img src="Aketi copy/Menu/Xmas-menu.jpg " alt="">
+                  <hr class="my-2">
+                  <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="Carte.html" role="button">Boaki bope.</a>
+                  </p>
+                </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+
+
+                    </div>
+                    <div class="col-10 align-self-center">
+                      <div class="col">
+
+            </div>
+            <div class="col-10 align-self-center">
+              <div class="col">
     <nav class="nav nav-tabs" id="myTab" role="tablist">
   <a class="nav-item nav-link active" id="nav-Entree-tab" data-toggle="tab" href="#nav-Entree" role="tab" aria-controls="nav-Entree" aria-selected="true">Entrée</a>
   <a class="nav-item nav-link" id="nav-Plat-tab" data-toggle="tab" href="#nav-Plat" role="tab" aria-controls="nav-Plat" aria-selected="false">Plat</a>

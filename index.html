@@ -11,113 +11,162 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-  </head>
-  <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="containrer-fluid d-flex">
-        <div class="navbar-header d-flex col-6">
-          <a class="navbar-brand" href="#"><img class="Aketi-icon" src="Aketi copy/Logo/Aketi-logo1.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#MyNavbar">
-            <span class="icone-bar"></span>
-            <span class="icone-bar"></span>
-            <span class="icone-bar"></span>
-          </button>
-        </div>
-
-
-
-    <div class="collapse navbar-collapse" id="myNavBar">
-      <ul class="nav navbar-nav navbar">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Carte.html">Carte</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Restaurants.html">Restaurants</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="Photo.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Photos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Photo.html">Action</a>
-            <a class="dropdown-item" href="Photo.html">Another action</a>
-            <a class="dropdown-item" href="Photo.html">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  </header>
   <body>
 
-    <!-- First Jumbotron -->
-    <div class="jumbotron text-center">
-  <h1 class="display-3">Boneo</h1>
-  <p class="lead"></p>
-  <hr class="my-4">
-  <p>.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+  <div id="sidebar-wrapper">
+    <div class="ct-mainNav-inner">
+
+      <a class="navbar-brand" href="#"><img img class="Aketi-icon" src="Aketi copy/Logo/Aketi-logo1.png" alt=""></a>
+         <ul id="sidebar_menu" class="sidebar-nav">
+            <li class="sidebar-brand">
+              <a id="menu-toggle" class="nav-link" href="index.html">Home
+                <span id="main_icon" <span class="sr-only">(current)></span></a>
+            </li>
+         </ul>
+         <ul class="sidebar-nav" id="sidebar">
+           <li>
+             <a class="nav-link" href="Carte.html">Carte
+                <span class="sub_icon glyphicon glyphicon-link"></span></a>
+           </li>
+            <ul class="sidebar-nav" id="sidebar">
+                 <li>
+                   <a class="nav-link" href="Restaurants.html">Restaurants
+                    <span class="sub_icon glyphicon glyphicon-link"></span></a>
+                 </li>
+                 <li>
+                   <a class="nav-link dropdown-toggle" href="Photo.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Photos
+                   </a><span class="sub_icon glyphicon glyphicon-link"></span></a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="#nav-Entree">Entree</a>
+                     <a class="dropdown-item" href="#nav-Plat">Plat</a>
+                     <a class="dropdown-item" href="#nav-Dessert">Dessert</a>
+                   </div>
+                 </li>
+            </ul>
+           <li>
+             <a class="nav-link" href="Contact.html">Contact</a>
+              <span class="sub_icon glyphicon glyphicon-link"></span></a>
+           </li>
+
+         </ul>
+
+         <div class="ct-mainNav-sidebar">
+                     <div class="ct-contactInfo text-uppercase animated" data-fx="fadeInUp">
+                         <h5 class="ct-u-colorMotive ct-u-font3">Location</h5>
+                         <p class="ct-u-font2">
+                             639 Saint-Job <br>
+                             Brusselasss, 1180
+                         </p>
+                     </div>
+                     <hr class="hr-custom ct-js-background animated" data-fx="fadeIn" data-time="400" data-bg="assets/images/hr2.png" data-bgrepeat="no-repeat" style="background-image: url(&quot;assets/images/hr2.png&quot;); background-repeat: no-repeat;">
+                     <div class="ct-contactInfo text-uppercase ct-u-paddingBottom30 animated" data-fx="fadeInUp">
+                         <h5 class="ct-u-colorMotive ct-u-font3">We are open</h5>
+                         <p class="ct-u-font2">
+                             Mon—Sat: 6am–6pm<br>
+                             Sunday: 6am–4pm
+                         </p>
+                     </div>
+                     <ul class="list-unstyled list-inline ct-socials animated" data-fx="fadeInUp" data-time="400">
+                         <li>
+                             <a href="https://www.facebook.com/createITpl" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                         </li>
+                         <li>
+                             <a href="https://twitter.com/createitpl" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                         </li>
+                         <li>
+                             <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google +"><i class="fa fa-fw fa-google-plus"></i></a>
+                         </li>
+                     </ul>
+                 </div>
+               </div>
+       </div>
 
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="first-slide img-responsive" src="Aketi copy/Salon-du-Mariage-Africain-de-Bruxelles/Ngouba-Soukali-1.jpg" alt="First slide" width="750" height="545">
-              <div class="container">
-                <div class="carousel-caption text-center">
-                  <h1>Boneo.</h1>
-                  <p>Aketi, un large choix de plats savoureux et gourmands.</p>
-                  <p><a class="btn btn-lg btn-primary" href="Carte.html" role="button">Notre Menu</a></p>
-                </div>
-              </div>
+
+        <!-- First Jumbotron -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+
             </div>
-            <div class="carousel-item">
-              <img class="second-slide img-responsive" src="Aketi copy/Salon-du-Mariage-Africain-de-Bruxelles/Tataki_Capitain_Asian.jpg" alt="Second slide" width="750" height="545">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1></h1>
-                  <p>Venez apprécier notre cuisine riche en couleur et chargée de traditions</p>
-                  <p><a class="btn btn-lg btn-primary" href="Contact.html" role="button">Contact Us</a></p>
-                </div>
-              </div>
+            <div class="jumbotron text-center col-10 align-self-center">
+          <h1 class="display-3">Boneo</h1>
+          <p class="lead">Pour votre dîner de réveillon, Aketi vous propose un menu à 30€ pensé sur mesure qui ajoutera à votre table de fête une pincée de découverte, un soupçon de tradition et sans conteste une explosion de saveurs.
+        </p>
+          <hr class="my-2">
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Carte.html" role="button">Boaki bope.</a>
+          </p>
+        </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+
+
             </div>
-            <div class="carousel-item">
-              <img class="third-slide img-responsive" src="Aketi copy/Salon-du-Mariage-Africain-de-Bruxelles/Veloute_Chacha.jpg" alt="Third slide" width="750" height="545">
-              <div class="container">
-                <div class="carousel-caption text-right">
-                  <h1>Des formules variées, adaptées à vos envies.</h1>
-                  <p> Dîners en famille, grandes célébrations, cocktails ou dégustations...</p>
-                  <p> <a class="btn btn-lg btn-primary" href="Photo.html" role="button">Browse gallery</a></p>
-                </div>
+            <div class="col-10 align-self-center">
+              <div class="col">
+
               </div>
+              <div class="jumbotron text-center">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="first-slide img-responsive" src="Aketi copy/Salon-du-Mariage-Africain-de-Bruxelles/Ngouba-Soukali-1.jpg" alt="First slide" width="660" height="545">
+                            <div class="container">
+                              <div class="carousel-caption text-center">
+                                <h2>Boneo.</h2>
+                                <p>Aketi, un large choix de plats savoureux et gourmands.</p>
+                                <p><a class="btn btn-lg btn-primary" href="Carte.html" role="button">Notre Menu</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="second-slide img-responsive" src="Aketi copy/Salon-du-Mariage-Africain-de-Bruxelles/Tataki_Capitain_Asian.jpg" alt="Second slide" width="760" height="545">
+                            <div class="container">
+                              <div class="carousel-caption">
+                                <h1></h1>
+                                <p>Venez apprécier notre cuisine riche en couleur et chargée de traditions</p>
+                                <p><a class="btn btn-lg btn-primary" href="Contact.html" role="button">Contact Us</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="third-slide img-responsive" src="Aketi copy/Salon-du-Mariage-Africain-de-Bruxelles/Veloute_Chacha.jpg" alt="Third slide" width="760" height="545">
+                            <div class="container">
+                              <div class="carousel-caption text-right">
+                                <h2>Des formules variées, adaptées à vos envies.</h2>
+                                <p> Dîners en famille, grandes célébrations, cocktails ou dégustations...</p>
+                                <p> <a class="btn btn-lg btn-primary" href="Photo.html" role="button">Browse gallery</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+
+          </div>
+            </div>
+
             </div>
           </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+          </div>
+
 
 
     <!-- Optional JavaScript -->
